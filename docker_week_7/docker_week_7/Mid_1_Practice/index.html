@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>User Registration form</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <form name="f">
+            Full Name: <input type = "text" id="name"><br>
+            Father's name: <input type = "text" id="fname" ><br>
+            Mother's name: <input type = "text" id="mname" ><br>
+            E-mail: <input type = "email" id="email" ><br>
+            Phone number: <input type="number" id="pno" ><br>
+            Date of Birth: <input type="date" id="dob" ><br>
+            Gender: <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female<br>
+            Qualification: <select id="quali" >
+            <option value="Post Graduation">Post Graduation</option>
+            <option value="Graduation">Graduation</option>
+            <option value="Under Graduation">Under Graduation</option>
+            </select><br>
+            Passport size photo: <input type="file" accept="image/*" id="pic" ><br>
+            Signature (Image format): <input type="file" accept="image/*" id="sign" ><br>
+            <input type = "button" value="Submit" onclick="validate();">
+            <input type ="reset" value="Reset">
+        </form>
+        <script src="validate.js"></script>
+    </body>
+</html>
